@@ -1,0 +1,30 @@
+.top-pape{
+  width: 100%;
+  background-color: #fafafa;
+  
+  &__site{
+    text-align: center;
+    padding: 70px 0 10px 0;
+    height: 100px;
+    @media only screen and (min-width: 650px){
+      padding: 30px 0 30px 0;
+    }
+    &_title{
+      padding: 0 0 5px 0;
+      font-size: 35px;
+      margin: 0 0 0 8px ;
+      height: 60px;
+      font-size: 50px;
+    }
+
+    h1{
+      font-weight: 100;
+    }
+    a{
+      text-decoration: none;
+      color: #3a302d;
+      letter-spacing: 5px;
+    }
+  }
+
+}
