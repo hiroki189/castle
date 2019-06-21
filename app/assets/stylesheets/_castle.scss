@@ -4,5 +4,47 @@
 }
 
 .wrapper{
+  background-color: #fafafa;
+}
 
+.top-inner{
+  margin: 0 auto;
+  &_clip{
+    display: block;
+    display: inline-block;
+    @media only screen and(min-width: 1000px){
+      margin-left: 20px;
+    }
+
+    .category-web{
+      height: 321px;
+      list-style: none;
+      @media only screen and(min-width: 700px){
+        width: 300px;
+        float: left;
+        margin:  0 0 30px 30px;
+      }
+      
+      .figure{
+        margin: 0;
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+      img{
+        max-width: 100%;
+      }
+      p{
+        text-align: center;
+        padding-top: 3px;
+      }
+    }
+
+  }
+}
+
+p{
+  color: #3a3a3a;
 }
