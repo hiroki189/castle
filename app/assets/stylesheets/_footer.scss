@@ -21,6 +21,20 @@
       padding: 8px 11px 8px 11px;
       border: 1px solid #3a302d;
       text-decoration: none;
-      color: black;
-    }
+  }
+  span{
+    padding: 8px 11px 8px 11px;
+    background-color: #3a302d;
+    color: #fff;
+    border: 1px solid #3a302d;
+  }
+  .next-page{
+    text-decoration: none;
+    padding: 8px 11px 8px 11px;
+    border: 1px solid #3a302d;
+  }
+}
+
+a{
+  color: #3a302d;
 }
