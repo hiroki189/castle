@@ -1,6 +1,6 @@
 .top-pape{
   width: 100%;
-  background-color: #fafafa;
+
   
   &__site{
     text-align: center;
@@ -16,9 +16,21 @@
       height: 60px;
       font-size: 50px;
     }
+    
+    i{
+      font-size: 30px;
+      position: absolute;
+      left: 60px;
+      top: 60px;
+      display: block;
+    }
 
     h1{
       font-weight: 100;
+    }
+
+    .side-bar{
+      display: none;
     }
     a{
       text-decoration: none;
@@ -28,3 +40,4 @@
   }
 
 }
+

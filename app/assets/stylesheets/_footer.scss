@@ -1,0 +1,40 @@
+.footer_clip{
+  display: box;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  height: 50px;
+    .menu{
+      display: inline-block;
+      list-style: none;
+      margin-right: 5px;
+
+    }
+    .page-figure{
+      text-decoration: none;
+      padding: 8px 11px 8px 11px;
+      background-color: #3a302d;
+      color: #fff;
+      border: 1px solid #3a302d;
+    }
+    .page-number{
+      padding: 8px 11px 8px 11px;
+      border: 1px solid #3a302d;
+      text-decoration: none;
+  }
+  span{
+    padding: 8px 11px 8px 11px;
+    background-color: #3a302d;
+    color: #fff;
+    border: 1px solid #3a302d;
+  }
+  .next-page{
+    text-decoration: none;
+    padding: 8px 11px 8px 11px;
+    border: 1px solid #3a302d;
+  }
+}
+
+a{
+  color: #3a302d;
+}
