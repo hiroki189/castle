@@ -1,14 +1,19 @@
 .footer_clip{
-  display: box;
-  margin-top: 10px;
+  margin-top: 30px;
   text-align: center;
   font-size: 14px;
   height: 50px;
+    &_frame{
+      display: box;
+    }
     .menu{
       display: inline-block;
       list-style: none;
       margin-right: 5px;
 
+    }
+    .page_square{
+      padding: 8px 11px 8px 11px;
     }
     .page-figure{
       text-decoration: none;
@@ -28,7 +33,7 @@
     color: #fff;
     border: 1px solid #3a302d;
   }
-  .next-page{
+  .send-page{
     text-decoration: none;
     padding: 8px 11px 8px 11px;
     border: 1px solid #3a302d;
