@@ -1,6 +1,6 @@
 .name{
-  height: 120px;
   width: 100%;
+  margin-bottom: 20px;
   &__header{
     padding: 0 30px;
     &_siromei{
@@ -28,5 +28,12 @@
         margin: 0 0 0 10px;
       }
     }
+  }
+}
+
+.castle-photo{
+  padding: 30px;
+  height: 450px;
+  &__box{
   }
 }
