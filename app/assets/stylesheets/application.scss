@@ -1,5 +1,11 @@
+// 全体で使うscss
+@import "font-awesome";
+@import "reset";
+
+
+// 個別で使うscss
 @import "castle";
 @import "header";
-@import "font-awesome";
 @import "footer";
-@import "reset";
+@import "indivi/osaka";
+
