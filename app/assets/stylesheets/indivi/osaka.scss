@@ -8,6 +8,25 @@
       font-size: 32px;
     }
     &__adress{
+      display: flex;
+      &_mark{
+        margin: 0 0 0 20px;
+        font-size: 25px;
+        color: #75a9ff;
+      }
+      &_sales{
+        font-size: 16px;
+        margin: 0 0 0 10px;
+      }
+      &_clock{
+        font-size: 25px;
+        color: #75a9ff;
+        margin: 0 0 0 40px;
+      }
+      &_time{
+        font-size: 16px;
+        margin: 0 0 0 10px;
+      }
     }
   }
 }
