@@ -1,14 +1,22 @@
 .wrapper
   =render 'castle/topp'
 
-.name
-  .name__header
-    %h1.name__header_siromei 大阪城
-  .name__header__adress
-    %i.fa.fa-map-marker.name__header__adress_mark
-    .name__header__adress_sales  〒540-0002 大阪府大阪市中央区大阪城１−１
-    %i.fa.fa-clock-o.name__header__adress_clock
-    .name__header__adress_time 営業時間 月~日 9:00 ~ 17:00
+  .name
+    .name__header
+      %h1.name__header_siromei 大阪城
+    .name__header__adress
+      %i.fa.fa-map-marker.name__header__adress_mark
+      .name__header__adress_sales  〒540-0002 大阪府大阪市中央区大阪城１−１
+      %i.fa.fa-clock-o.name__header__adress_clock
+      .name__header__adress_time 営業時間 月~日 9:00 ~ 17:00
 
-.castle-photo
-  .castle-photo__box
+  .castle-photo
+    .castle-photo__box
+      = image_tag("photo/top_img01.jpg")
+
+  .detail
+    .detail__point
+      .detail__point_title 見所
+      .detail__point_description
+    .detail__history
+    .detail__map
