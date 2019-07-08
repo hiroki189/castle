@@ -48,6 +48,7 @@
       width: 33.33333%;
       padding: 20px;
       background: #fff;
+      margin: 0 20px 0 0;
       &_title{
         font-weight: 700;
         font-size: 16px;
@@ -69,12 +70,23 @@
       padding: 20px;
       background: #fff;
       margin: 0 20px 0 0;
+      &_title{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000a12;
+        padding-bottom: 10px;
+      }
+      &_comment{
+        padding-bottom: 10px;
+      }
     }
     &__map{
       width: calc(100%/3);
       width: 33.33333%;
       padding: 20px;
       background: #fff;
-      margin: 0 20px 0 0;
+      &_title{
+      }
     }
   }
