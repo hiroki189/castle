@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   resources :ueda, only: [:index]
   resources :hiromae, only: [:index]
   resources :maruoka, only: [:index]
-  resources :marue, only: [:index]
+  resources :matue, only: [:index]
   resources :bichumatuyama, only: [:index]
   resources :marukame, only: [:index]
   resources :uwajima, only: [:index]
