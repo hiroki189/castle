@@ -1,7 +1,5 @@
 .top-pape{
   width: 100%;
-
-  
   &__site{
     text-align: center;
     padding: 70px 0 10px 0;
@@ -16,7 +14,6 @@
       height: 60px;
       font-size: 50px;
     }
-    
     i{
       font-size: 30px;
       position: absolute;
@@ -24,13 +21,34 @@
       top: 60px;
       display: block;
     }
-
     h1{
       font-weight: 100;
     }
-
-    .side-bar{
-      display: none;
+    ul{
+      list-style: none;
+    }
+    .side-warap{
+      float: left;
+      &__bar{
+        width: 440px;
+        height: 570px;
+        position: absolute;
+        left: 40px;
+        top: 100px;
+        background:#fff;
+        display:none;
+        &_list{
+          width:220px;
+          height: 50px;
+          h3{
+            font-size: 14px;
+            line-height: 45px;
+            font-weight: 300;
+            float: left;
+            padding:0 20px;
+          }
+        }
+      }
     }
     a{
       text-decoration: none;
@@ -38,6 +56,5 @@
       letter-spacing: 5px;
     }
   }
-
 }
 
