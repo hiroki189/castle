@@ -1,0 +1,50 @@
+.wrapper
+  =render 'castle/topp'
+
+  .name
+    .name__header
+      %h1.name__header_siromei 松本城
+    .name__header__adress
+      %i.fa.fa-map-marker.name__header__adress_mark
+      .name__header__adress_sales 〒390-0873 長野県松本市丸の内4-1
+      %i.fa.fa-clock-o.name__header__adress_clock
+      .name__header__adress_time 営業時間 月~日 8:30~17:00
+
+  .castle-photo
+    .castle-photo__box
+      = image_tag("photo/9ec56a7638eb0f180a7d2366cc1b9696.jpg")
+
+  .detail
+    .detail__point
+      .detail__point_title 見所
+      .detail__point_description
+        %span
+          石川父子によって戦国時代末期に築かれた天守は、戦いを意識した堅固な造りとなっています。大天守のほか乾小天守と渡櫓に石落しが合計11ヶ所設けられ、壁には100を超える狭間（矢狭間・鉄砲狭間）が見られます。
+          %br
+          天守の最上階では外の素晴らしい眺めに目がいきますが、屋根裏も見ておきたいポイントです。松本城大・小天守の最上階には天井が吊られていないため、入母屋内を見ることができます。中央には、城の守り神である二十四夜神が祀られています。
+
+      -# .detail__point_detour.contory 寄り道
+    .detail__history
+      .detail__history_title 詳細
+      .detail__history_comment
+        %span
+          松本城は戦国時代の1504年に築城されたのが始まりです。その際は深志城といいましたが、徳川家康の配下になった小笠原貞慶が松本城と改称しました。1590年石川数正が入城し、城下町を整備しました。その後何度も修復を繰り返し、国宝の城となりました。松本城の特徴は建物が壁面の上部を白漆喰、下部を黒漆塗りの下見板にしています。白と黒の対比が美しさを出しています。観覧料は大人：610円、子供：300円です。電車でのアクセス：松本駅(JR)から徒歩15分
+      -# .detail__history_money.fee 入場料
+    .detail__map
+      .detail__map_title お問い合わせ
+      .detail__map_paste
+      .detail__map_adress
+        %i.fa.fa-map-marker.detail__map_adress_mark
+        %span.detail__map_adress_code 〒390-0873 長野県松本市丸の内4-1
+
+  -# .word
+  -#   .word__pillar
+  -#     .word__pillar__mouse
+  -#       .word__pillar__mouse_title
+  -#         .word__pillar__mouse_title_text
+  -#           口コミ
+  -#     .word__pillar__container
+  -#       .word__pillar__container__reviews
+  -#         .word__pillar__container__reviews_name
+  -#           %p.word__pillar__container__reviews_name_letter
+  -#         .word__pillar__container__reviews_quoto

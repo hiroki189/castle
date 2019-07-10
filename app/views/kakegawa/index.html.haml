@@ -1,0 +1,50 @@
+.wrapper
+  =render 'castle/topp'
+
+  .name
+    .name__header
+      %h1.name__header_siromei 掛川城
+    .name__header__adress
+      %i.fa.fa-map-marker.name__header__adress_mark
+      .name__header__adress_sales  〒436-0079 静岡県掛川市掛川1138-24
+      %i.fa.fa-clock-o.name__header__adress_clock
+      .name__header__adress_time 営業時間 月~日 9:00~17:00
+
+  .castle-photo
+    .castle-photo__box
+      = image_tag("photo/c7c2d8e1.jpg")
+
+  .detail
+    .detail__point
+      .detail__point_title 見所
+      .detail__point_description
+        %span
+          春には満開の桜と上品な城のコントラストの妙を見ることができます。また夜になると、ライトアップされた幻想的な城の姿を私たちに見せてくれます。山内一豊によって造られた天守には山内家伝来の歴史ある軍配や鎧などが展示されている他、石落としなど、外敵から守るための工夫が凝らされています。
+          %br
+          掛川城の一帯は、現在掛川城公園となっています。公園内の城内には、国の重要文化財に指定されている二ノ丸御殿や天守の他、太鼓櫓や四足門、三日月堀など、歴史と見どころに溢れています。
+
+      -# .detail__point_detour.contory 寄り道
+    .detail__history
+      .detail__history_title 詳細
+      .detail__history_comment
+        %span
+          掛川城は、静岡県掛川市にある日本の城です。戦国時代に駿河の守護大名今川氏が遠江を支配するための拠点として、重臣朝比奈泰煕に命じて掛川古城を築城させたと言われています。今川氏の勢力拡大に伴い手狭になった為、1513年頃に掛川城が築城されました。1869年に廃城となりましたが、1994年に日本初の本格木造天守閣として復元されました。毎年桜の季節には、”掛川城公園さくらまつり”が開催され桜を楽しむ人で賑わいます。電車でのアクセス：掛川駅(JR)
+      -# .detail__history_money.fee 入場料
+    .detail__map
+      .detail__map_title お問い合わせ
+      .detail__map_paste
+      .detail__map_adress
+        %i.fa.fa-map-marker.detail__map_adress_mark
+        %span.detail__map_adress_code 〒436-0079 静岡県掛川市掛川1138-24
+
+  -# .word
+  -#   .word__pillar
+  -#     .word__pillar__mouse
+  -#       .word__pillar__mouse_title
+  -#         .word__pillar__mouse_title_text
+  -#           口コミ
+  -#     .word__pillar__container
+  -#       .word__pillar__container__reviews
+  -#         .word__pillar__container__reviews_name
+  -#           %p.word__pillar__container__reviews_name_letter
+  -#         .word__pillar__container__reviews_quoto

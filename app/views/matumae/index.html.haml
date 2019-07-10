@@ -1,0 +1,48 @@
+.wrapper
+  =render 'castle/topp'
+
+  .name
+    .name__header
+      %h1.name__header_siromei 松前城
+    .name__header__adress
+      %i.fa.fa-map-marker.name__header__adress_mark
+      .name__header__adress_sales 〒049-1511 北海道松前郡松前町松前町松城
+      %i.fa.fa-clock-o.name__header__adress_clock
+      .name__header__adress_time 営業時間 月~日 9:00~17:00
+
+  .castle-photo
+    .castle-photo__box
+      = image_tag("photo/77_main_image.jpeg")
+
+  .detail
+    .detail__point
+      .detail__point_title 見所
+      .detail__point_description
+        %span
+          松前の桜のなかでも特に有名なものがいくつかあり、龍雲院の「蝦夷霞桜」、光善寺の「血脈桜」、天神坂門の「夫婦桜」は“三大名木”といわれ親しまれている。松前の桜は、松前藩の時代、本州からわたってきた人々が、遠く離れた江戸や京都を懐かしんで植えたのがきっかけと言われている。桜は長い間、まちの人たちによって大切に現代まで守り育てられてきた。
+
+      -# .detail__point_detour.contory 寄り道
+    .detail__history
+      .detail__history_title 詳細
+      .detail__history_comment
+        %span
+          松前城（まつまえじょう）は、北海道渡島総合振興局管内松前町にあった日本の城（平山城）。福山城（ふくやまじょう）とも呼ばれている。
+      -# .detail__history_money.fee 入場料
+    .detail__map
+      .detail__map_title お問い合わせ
+      .detail__map_paste
+      .detail__map_adress
+        %i.fa.fa-map-marker.detail__map_adress_mark
+        %span.detail__map_adress_code 〒049-1511 北海道松前郡松前町松前町松城
+
+  -# .word
+  -#   .word__pillar
+  -#     .word__pillar__mouse
+  -#       .word__pillar__mouse_title
+  -#         .word__pillar__mouse_title_text
+  -#           口コミ
+  -#     .word__pillar__container
+  -#       .word__pillar__container__reviews
+  -#         .word__pillar__container__reviews_name
+  -#           %p.word__pillar__container__reviews_name_letter
+  -#         .word__pillar__container__reviews_quoto

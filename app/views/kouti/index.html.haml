@@ -1,0 +1,49 @@
+.wrapper
+  =render 'castle/topp'
+
+  .name
+    .name__header
+      %h1.name__header_siromei 高知城
+    .name__header__adress
+      %i.fa.fa-map-marker.name__header__adress_mark
+      .name__header__adress_sales  〒780-0850 高知県高知市丸の内1-2-1
+      %i.fa.fa-clock-o.name__header__adress_clock
+      .name__header__adress_time 営業時間 月~日 9:00~17:00
+
+  .castle-photo
+    .castle-photo__box
+      = image_tag("photo/180212-081735-IMG_1048_R.jpg")
+
+  .detail
+    .detail__point
+      .detail__point_title 見所
+      .detail__point_description
+        %span
+          県立高知城歴史博物館は、国宝や重要文化財を含む6万7千点に及ぶ土佐藩山内家伝来の貴重な資料を中心に、高知の歴史について学ぶことができる博物館。膨大な資料と高知の歴史に特化したこの博物館は高知の観光スポットとして脚光を浴びています。本丸御殿と天守は両方とも重要文化財で、江戸時代に建造されたものです。本丸御殿内は「書院造」という武家の格式を感じることができる様式を持ち、美しい「うちわけ波」の欄間や、実戦を見据えた「武者隠し」の構造など、現代では国内で2件しか残らない貴重な本丸御殿の姿を知ることができます。
+
+
+      -# .detail__point_detour.contory 寄り道
+    .detail__history
+      .detail__history_title 詳細
+      .detail__history_comment
+        %span
+          高知城（こうちじょう）は、高知県高知市（土佐国土佐郡高知）にある日本の城。別名鷹城（たかじょう）。江戸時代には土佐藩の藩庁が置かれた。江戸時代に建造された天守や本丸御殿(なお、天守と本丸御殿が両方現存しているのは高知城のみである。)、追手門等が現存し(天守と追手門が両方現存している城は全国で弘前城・丸亀城・高知城の3ヶ所)、城跡は国の史跡に指定されている。日本100名城に選定されている。
+      -# .detail__history_money.fee 入場料
+    .detail__map
+      .detail__map_title お問い合わせ
+      .detail__map_paste
+      .detail__map_adress
+        %i.fa.fa-map-marker.detail__map_adress_mark
+        %span.detail__map_adress_code 〒780-0850 高知県高知市丸の内1-2-1
+
+  -# .word
+  -#   .word__pillar
+  -#     .word__pillar__mouse
+  -#       .word__pillar__mouse_title
+  -#         .word__pillar__mouse_title_text
+  -#           口コミ
+  -#     .word__pillar__container
+  -#       .word__pillar__container__reviews
+  -#         .word__pillar__container__reviews_name
+  -#           %p.word__pillar__container__reviews_name_letter
+  -#         .word__pillar__container__reviews_quoto

@@ -1,0 +1,48 @@
+.wrapper
+  =render 'castle/topp'
+
+  .name
+    .name__header
+      %h1.name__header_siromei 二条城
+    .name__header__adress
+      %i.fa.fa-map-marker.name__header__adress_mark
+      .name__header__adress_sales 〒604-8301 京都府京都市中京区二条通堀川西入二条城町541
+      %i.fa.fa-clock-o.name__header__adress_clock
+      .name__header__adress_time 営業時間 月~日 8:45~16:00
+
+  .castle-photo
+    .castle-photo__box
+      = image_tag("photo/img_snow_l_01.png")
+
+  .detail
+    .detail__point
+      .detail__point_title 見所
+      .detail__point_description
+        %span
+          今日の二条城の原型が整ったのは、三代将軍家光が後水尾天皇を二条城へ招くために数年がかりで行った大改築によるもの。創建は家康ですが、完成させたのは家光といえます。国宝・二の丸御殿の正門にあたる唐門は重要文化財であり、これもまた後水尾天皇行幸の際に設置されました。唐門は切妻造の四脚門で、堂々たる唐破風や極彩色の彫刻が特徴。同時代の唐門の中では国内最大級といわれています。檜皮葺の張替え、金箔貼りなおし、漆塗り替え、彫刻の彩色など全面的な修復により当時の輝きを取り戻しました。
+
+      -# .detail__point_detour.contory 寄り道
+    .detail__history
+      .detail__history_title 詳細
+      .detail__history_comment
+        %span
+          二条城は1603年に徳川家康が宿泊所として造営、その後3代将軍家光が伏見城の遺構を移すなどして1626年に完成しました。1867年に15代将軍慶喜が大政奉還をした城としても有名です。本丸御殿と二の丸御殿から成り、200年以上にわたる徳川家の歴史と日本の歴史を感じることができる城として、多くの観光客でにぎわいます。1953年には二の丸庭園が特別名勝に指定され、1994年にはユネスコの世界遺産リストに登録されました。電車でのアクセス：二条城前駅(地下鉄東西線) など
+      -# .detail__history_money.fee 入場料
+    .detail__map
+      .detail__map_title お問い合わせ
+      .detail__map_paste
+      .detail__map_adress
+        %i.fa.fa-map-marker.detail__map_adress_mark
+        %span.detail__map_adress_code 〒604-8301 京都府京都市中京区二条通堀川西入二条城町541
+
+  -# .word
+  -#   .word__pillar
+  -#     .word__pillar__mouse
+  -#       .word__pillar__mouse_title
+  -#         .word__pillar__mouse_title_text
+  -#           口コミ
+  -#     .word__pillar__container
+  -#       .word__pillar__container__reviews
+  -#         .word__pillar__container__reviews_name
+  -#           %p.word__pillar__container__reviews_name_letter
+  -#         .word__pillar__container__reviews_quoto

@@ -1,0 +1,50 @@
+.wrapper
+  =render 'castle/topp'
+
+  .name
+    .name__header
+      %h1.name__header_siromei 白石城
+    .name__header__adress
+      %i.fa.fa-map-marker.name__header__adress_mark
+      .name__header__adress_sales 〒989-0251 宮城県白石市益岡町1-16
+      %i.fa.fa-clock-o.name__header__adress_clock
+      .name__header__adress_time 営業時間 月~日
+
+  .castle-photo
+    .castle-photo__box
+      = image_tag("photo/04BDFE42177D4D7CB3668EBAE1B4D88C_LL.jpg")
+
+  .detail
+    .detail__point
+      .detail__point_title 見所
+      .detail__point_description
+        %span
+          天守閣は、城郭として機能した文政6年の構造による三階櫓を忠実に復元され、数百年の歳月にも耐え得る全国的にも数少ない木造復元による構造です。天守閣の高さは石垣天端から約16.7mで、戦後の木造復元天守閣では高さ・広さとも日本最大級を誇ります
+          %br
+          外壁から大手門にかけては、加工した石と石の間に間詰め石をいれる『打ち込みハギ技法』で石垣積みがされ、特に野づら積みを採用したのは全国でも白石城が初めてです。
+
+      -# .detail__point_detour.contory 寄り道
+    .detail__history
+      .detail__history_title 詳細
+      .detail__history_comment
+        %span
+          白石城（しろいしじょう）は、宮城県白石市にあった日本の城である。別名益岡城（枡岡とも）。白石市指定史跡。
+      -# .detail__history_money.fee 入場料
+    .detail__map
+      .detail__map_title お問い合わせ
+      .detail__map_paste
+      .detail__map_adress
+        %i.fa.fa-map-marker.detail__map_adress_mark
+        %span.detail__map_adress_code 〒989-0251 宮城県白石市益岡町1-16
+
+  -# .word
+  -#   .word__pillar
+  -#     .word__pillar__mouse
+  -#       .word__pillar__mouse_title
+  -#         .word__pillar__mouse_title_text
+  -#           口コミ
+  -#     .word__pillar__container
+  -#       .word__pillar__container__reviews
+  -#         .word__pillar__container__reviews_name
+  -#           %p.word__pillar__container__reviews_name_letter
+  -#         .word__pillar__container__reviews_quoto

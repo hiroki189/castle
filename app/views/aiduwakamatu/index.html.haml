@@ -1,0 +1,48 @@
+.wrapper
+  =render 'castle/topp'
+
+  .name
+    .name__header
+      %h1.name__header_siromei 会津若松城
+    .name__header__adress
+      %i.fa.fa-map-marker.name__header__adress_mark
+      .name__header__adress_sales 〒965-0873 福島県会津若松市追手町1-1
+      %i.fa.fa-clock-o.name__header__adress_clock
+      .name__header__adress_time 営業時間 月~日 8:30~17:00
+
+  .castle-photo
+    .castle-photo__box
+      = image_tag("photo/1.jpeg")
+
+  .detail
+    .detail__point
+      .detail__point_title 見所
+      .detail__point_description
+        %span
+          幕末の戊辰戦争では新政府軍の猛攻に耐え難攻不落の名城と称えられましたが明治7年、政府の命令により取り壊され、現在の天守は昭和40年（1965）に再建されました。内部は博物館になっています。五層からは会津若松市街地や会津盆地、磐梯山が一望できます。
+
+      -# .detail__point_detour.contory 寄り道
+    .detail__history
+      .detail__history_title 詳細
+      .detail__history_comment
+        %span
+          若松城（わかまつじょう）は、福島県会津若松市追手町にあった日本の城である。地元では鶴ヶ城（つるがじょう）と呼ばれるが、同名の城が他にあるため、地元以外では会津若松城と呼ばれることが多い。文献では黒川城、または会津城とされることもある。国の史跡としては、若松城跡（わかまつじょうあと）の名称で指定されている。
+      -# .detail__history_money.fee 入場料
+    .detail__map
+      .detail__map_title お問い合わせ
+      .detail__map_paste
+      .detail__map_adress
+        %i.fa.fa-map-marker.detail__map_adress_mark
+        %span.detail__map_adress_code 〒965-0873 福島県会津若松市追手町1-1
+
+  -# .word
+  -#   .word__pillar
+  -#     .word__pillar__mouse
+  -#       .word__pillar__mouse_title
+  -#         .word__pillar__mouse_title_text
+  -#           口コミ
+  -#     .word__pillar__container
+  -#       .word__pillar__container__reviews
+  -#         .word__pillar__container__reviews_name
+  -#           %p.word__pillar__container__reviews_name_letter
+  -#         .word__pillar__container__reviews_quoto

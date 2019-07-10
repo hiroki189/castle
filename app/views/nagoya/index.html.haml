@@ -1,0 +1,51 @@
+.wrapper
+  =render 'castle/topp'
+
+  .name
+    .name__header
+      %h1.name__header_siromei 名古屋城
+    .name__header__adress
+      %i.fa.fa-map-marker.name__header__adress_mark
+      .name__header__adress_sales  〒460-0031 愛知県名古屋中区本丸1-1
+      %i.fa.fa-clock-o.name__header__adress_clock
+      .name__header__adress_time 営業時間 月~日 9:00~16:30
+
+  .castle-photo
+    .castle-photo__box
+      = image_tag("photo/b0ff88c092c743ddbce52a13beb3456b.jpg")
+
+  .detail
+    .detail__point
+      .detail__point_title 見所
+      .detail__point_description
+        %span
+          名古屋城には、金の鯱が有名。名古屋城天守が完成したときからあるもので、当時の金鯱は一対で慶長大判1940枚分もの金が使用されたと言われている。現在は復元されたもの。
+          %br
+          建物の中に入るとヒノキの上品な香りで包まれ、入り口を入ってすぐの玄関は、18畳の一之間と28畳の二之間が並び、スケールの大きさに圧巻の一言につきます。外観、内部とも桧の白木が美しく、気品漂う当時の生活の豊かさを感じさせます。
+          
+
+      -# .detail__point_detour.contory 寄り道
+    .detail__history
+      .detail__history_title 詳細
+      .detail__history_comment
+        %span
+          名古屋城（なごやじょう）は、尾張国愛知郡名古屋（現在の愛知県名古屋市中区・北区）にあった日本の城。「名城（めいじょう）」、「金鯱城（きんこじょう、きんしゃちじょう）」、「金城（きんじょう）」の異名を持つ。日本100名城に選定されており、国の特別史跡に指定されている。(Wikipedia引用)
+      -# .detail__history_money.fee 入場料
+    .detail__map
+      .detail__map_title お問い合わせ
+      .detail__map_paste
+      .detail__map_adress
+        %i.fa.fa-map-marker.detail__map_adress_mark
+        %span.detail__map_adress_code 〒460-0031 愛知県名古屋中区本丸1-1
+
+  -# .word
+  -#   .word__pillar
+  -#     .word__pillar__mouse
+  -#       .word__pillar__mouse_title
+  -#         .word__pillar__mouse_title_text
+  -#           口コミ
+  -#     .word__pillar__container
+  -#       .word__pillar__container__reviews
+  -#         .word__pillar__container__reviews_name
+  -#           %p.word__pillar__container__reviews_name_letter
+  -#         .word__pillar__container__reviews_quoto

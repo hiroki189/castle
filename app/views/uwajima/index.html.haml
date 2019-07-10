@@ -1,0 +1,50 @@
+.wrapper
+  =render 'castle/topp'
+
+  .name
+    .name__header
+      %h1.name__header_siromei 宇和島城
+    .name__header__adress
+      %i.fa.fa-map-marker.name__header__adress_mark
+      .name__header__adress_sales 〒798-0060 愛媛県宇和島市丸之内1
+      %i.fa.fa-clock-o.name__header__adress_clock
+      .name__header__adress_time 営業時間 月~日 6:00~17:00
+
+  .castle-photo
+    .castle-photo__box
+      = image_tag("photo/500.jpeg")
+
+  .detail
+    .detail__point
+      .detail__point_title 見所
+      .detail__point_description
+        %span
+          現在は、天守のほかに上立門や城塁、石垣が残っています。平成28年(2016年)3月に、藩の建造物を作ったり修繕、管理する作事所跡などが国の史跡「宇和島城跡」に追加指定されました。
+          %br
+          宇和島城は、島がつくことから、平安時代の築城当時は島の城だった可能性もあります。今でも海に近い距離に宇和島城はあります。宇和島城の優れた特徴として、地上からは四角い堀で囲まれたように見られますが、実際には海に突き出た部分が三角形の二辺のようになっていて、宇和島城全体が五角形になっていることです。
+
+      -# .detail__point_detour.contory 寄り道
+    .detail__history
+      .detail__history_title 詳細
+      .detail__history_comment
+        %span
+          宇和島城（うわじまじょう）は、四国の愛媛県宇和島市丸之内にあった日本の城である。江戸時代は宇和島藩の藩庁となった。城跡は国の史跡に指定されている（1937年（昭和12年）指定）。
+      -# .detail__history_money.fee 入場料
+    .detail__map
+      .detail__map_title お問い合わせ
+      .detail__map_paste
+      .detail__map_adress
+        %i.fa.fa-map-marker.detail__map_adress_mark
+        %span.detail__map_adress_code 〒798-0060 愛媛県宇和島市丸之内1
+
+  -# .word
+  -#   .word__pillar
+  -#     .word__pillar__mouse
+  -#       .word__pillar__mouse_title
+  -#         .word__pillar__mouse_title_text
+  -#           口コミ
+  -#     .word__pillar__container
+  -#       .word__pillar__container__reviews
+  -#         .word__pillar__container__reviews_name
+  -#           %p.word__pillar__container__reviews_name_letter
+  -#         .word__pillar__container__reviews_quoto
