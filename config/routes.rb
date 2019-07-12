@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root to: 'castle#index'
   resources :twopage, only: [:index]
   resources :threepage, only: [:index]
+
+
   resources :osaka, only: [:index]
   resources :himeji, only: [:index]
   resources :nagoya, only: [:index]
