@@ -43,11 +43,11 @@
         &_mega{
           width: auto;
           position: absolute;
-          left: 30px;
           top: -20px;
           z-index: 1000;
           height: 330px;
           background: #fff;
+          text-align: left;
 
           &_list{
             width: 224px;
@@ -55,6 +55,7 @@
             
             h3{
               padding: 0 16px;
+              font-weight: 400;
               line-height: 44px;
             }
             h3:hover{
@@ -70,6 +71,10 @@
               &_post{
                 display:none;
                 width: 224px;
+                &_category{
+                  font-weight: 400;
+                  font-size: 14px;
+                }
               }
             }
           }
