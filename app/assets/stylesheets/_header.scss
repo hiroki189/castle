@@ -14,12 +14,75 @@
       height: 60px;
       font-size: 50px;
     }
-    i{
-      font-size: 30px;
-      position: absolute;
-      left: 60px;
-      top: 60px;
-      display: block;
+    .side-warap{
+      float: left;
+      .side-warap__bar>li{
+          position: relative;
+          display: inline-block;
+          padding: 0 11px;
+          cursor: pointer;
+      }
+      
+      &__bar{
+        h2{
+          position: absolute;
+          top: -50px;
+          left: 60px;
+
+          display: block;
+        }
+        &_parent{
+          position: relative;
+          height: 44px;
+          display:block;
+          i{
+            color: #000000;
+            font-size: 30px;
+          }
+        }
+        &_mega{
+          width: auto;
+          position: absolute;
+          left: 30px;
+          top: -20px;
+          z-index: 1000;
+          height: 330px;
+          background: #fff;
+
+          &_list{
+            width: 224px;
+            display:none;
+            
+            h3{
+              padding: 0 16px;
+              line-height: 44px;
+            }
+            h3:hover{
+              background: #ea352d;
+              color: #fff;
+            }
+            &_second{
+              position: absolute;
+              top: 0;
+              left: 224px;
+              background: #fff;
+              height: 44px;
+              &_post{
+                display:none;
+                width: 224px;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .side-warap__bar>li:hover
+    .side-warap__bar_mega_list{
+      display:block;
+    }
+    .side-warap__bar_mega_list:hover>ul .side-warap__bar_mega_list_second_post{
+      display:block;
     }
     h1{
       font-weight: 100;
@@ -27,29 +90,7 @@
     ul{
       list-style: none;
     }
-    .side-warap{
-      float: left;
-      &__bar{
-        width: 440px;
-        height: 570px;
-        position: absolute;
-        left: 40px;
-        top: 100px;
-        background:#fff;
-        display:none;
-        &_list{
-          width:220px;
-          height: 50px;
-          h3{
-            font-size: 14px;
-            line-height: 45px;
-            font-weight: 300;
-            float: left;
-            padding:0 20px;
-          }
-        }
-      }
-    }
+  
     a{
       text-decoration: none;
       color: #3a302d;
