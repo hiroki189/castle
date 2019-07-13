@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  root to: 'castle#index'
+  root to: 'castles#index'
   resources :twopage, only: [:index]
   resources :threepage, only: [:index]
 
+  resources :comments, only: [:new]
 
   resources :osaka, only: [:index]
   resources :himeji, only: [:index]
