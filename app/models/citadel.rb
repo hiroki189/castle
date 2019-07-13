@@ -1,0 +1,2 @@
+class Citadel < ApplicationRecord
+end
