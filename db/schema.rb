@@ -10,13 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190714032233) do
+ActiveRecord::Schema.define(version: 20190714061953) do
 
   create_table "citadels", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
-    t.text     "text",       limit: 65535, null: false
-    t.text     "image",      limit: 65535, null: false
-    t.integer  "castle_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
