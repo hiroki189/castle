@@ -3,7 +3,9 @@
 
   .name
     .name__header
-      %h1.name__header_siromei 大阪城
+      %h1.name__header_siromei
+        - @citadel.each do |citadel|
+          = citadel.name
     .name__header__adress
       %i.fa.fa-map-marker.name__header__adress_mark
       .name__header__adress_sales  〒540-0002 大阪府大阪市中央区大阪城１−１

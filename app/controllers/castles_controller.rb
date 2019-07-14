@@ -1,9 +1,9 @@
 class CastlesController < ApplicationController
   def index
-    Japanesecastle.data
   end
 
   def show
+    @citadel = Citadel.all
   end
 
 end
