@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'castles#index'
+  resources :castles, only: [:index, :show]
   resources :twopage, only: [:index]
   resources :threepage, only: [:index]
 
