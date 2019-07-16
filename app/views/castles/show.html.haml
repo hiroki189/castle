@@ -4,28 +4,25 @@
   .name
     .name__header
       %h1.name__header_siromei
-        - @citadel.each do |citadel|
-          = citadel.name
+        = @citadel.name
     .name__header__adress
       %i.fa.fa-map-marker.name__header__adress_mark
-      .name__header__adress_sales  〒540-0002 大阪府大阪市中央区大阪城１−１
+      .name__header__adress_sales
+        = @citadel.address
       %i.fa.fa-clock-o.name__header__adress_clock
-      .name__header__adress_time 営業時間 月~日 9:00 ~ 17:00
+      .name__header__adress_time
+        = @citadel.time
 
   .castle-photo
     .castle-photo__box
-      = image_tag("photo/top_img01.jpg")
+      = image_tag(@citadel.image)
 
   .detail
     .detail__point
       .detail__point_title 見所
       .detail__point_description
         %span
-          エレベーターが配置されているので足腰が悪い方でも見学することができる。
-          %br
-          堀や門の位置などは江戸時代からあまり変わっておらず、展望台から見ることで人が入ってきて場所や手薄の場所を考えることができ感慨深い。
-          %br
-          城内では、秀吉公のプロジェクターが見ることができ生涯を知ることができる。教科書で習ったことを立体的に見ることができるので夢中に見れるはずだ。
+          = @citadel.text
 
       -# .detail__point_detour.contory 寄り道
     .detail__history
