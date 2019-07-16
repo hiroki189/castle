@@ -3,7 +3,9 @@ class CreateCitadels < ActiveRecord::Migration[5.0]
     create_table :citadels do |t|
       t.string    :name
       t.string    :address
-      
+      t.string    :time
+      t.text      :image
+      t.text      :text
       t.timestamps    null: true
     end
   end
