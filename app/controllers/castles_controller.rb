@@ -3,7 +3,8 @@ class CastlesController < ApplicationController
   end
 
   def show
-    @citadel = Citadel.all
+    # binding.pry
+    @citadel = Citadel.find(params[:id])
   end
 
 end
