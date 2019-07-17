@@ -29,7 +29,7 @@
       .detail__history_title 詳細
       .detail__history_comment
         %span
-          「太閤はんのお城」と親しみを込めて呼ばれることもあるが、1583年（天正11年）から1598年（慶長3年）にかけて豊臣秀吉が築いた大坂城（豊臣大坂城）の遺構は、現在全て埋没している。現在地表に見ることのできる大坂城の遺構は、1620年（元和6年）から1629年（寛永6年）にかけて徳川秀忠が実質的な新築に相当する修築を施した大坂城（徳川大坂城）の遺構である。(wikipedia引用)
+          = @citadel.detail
       -# .detail__history_money.fee 入場料
     .detail__map
       .detail__map_title お問い合わせ
@@ -37,4 +37,5 @@
         %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26247.393044654487!2d135.4974402998704!3d34.68186425422633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0cd5c283afd%3A0xf01d07d5ca11e41!2z5aSn6Ziq5Z-O!5e0!3m2!1sja!2sjp!4v1562924460385!5m2!1sja!2sjp", :style => "border:0", :width => "600"}
       .detail__map_adress
         %i.fa.fa-map-marker.detail__map_adress_mark
-        %span.detail__map_adress_code 〒540-0002 大阪府大阪市中央区大阪城１−１
+        %span.detail__map_adress_code
+          = @citadel.address

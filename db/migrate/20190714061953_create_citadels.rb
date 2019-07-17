@@ -6,6 +6,9 @@ class CreateCitadels < ActiveRecord::Migration[5.0]
       t.string    :time
       t.text      :image
       t.text      :text
+      t.text      :detail
+
+      
       t.timestamps    null: true
     end
   end
