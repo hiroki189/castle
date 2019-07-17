@@ -6,23 +6,20 @@
       %ul.category
         %li.category-web
           .figure
-            %a{href: "/hirosima"}
-              %img{src: "/assets/500px-Hiroshima-castle-daihonei.jpg",width: "400",height: "300"}
-              %p 広島城
+            = link_to image_tag("/assets/500px-Hiroshima-castle-daihonei.jpg",width: "400",height: "300"), "/castles/25"
+            %p 広島城
         %li.category-web
           .figure
-            %a{href: "/okayama"}
-              %img{src: "/assets/520px-Okayama_Castle_02.jpg",width: "400",height: "300"}
-              %p 岡山城
+            = link_to image_tag("/assets/520px-Okayama_Castle_02.jpg",width: "400",height: "300"), "/castles/26"
+            %p 岡山城
         %li.category-web
           .figure
-            %a{href: "/odawara"}
-              %img{src: "/assets/小田原城.jpeg",width: "400",height: "300"}
-              %p 小田原城
+            = link_to image_tag("/assets/小田原城.jpeg",width: "400",height: "300"), "/castles/27"
+            %p 小田原城
         %li.category-web
           .figure
-            %a{href: "/hukuyama"}
-              %img{src: "/assets/520px-Fukuyamajyou7055.jpeg",width: "400",height: "300"}
-              %p 福山城
+            = link_to image_tag("/assets/520px-Fukuyamajyou7055.jpeg",width: "400",height: "300"), "/castles/28"
+            %p 福山城
+            
     .footer_clip
       =render 'under'
