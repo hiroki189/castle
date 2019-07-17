@@ -7,13 +7,8 @@
   &_clip{
     display: block;
     display: inline-block;
-    @media screen and(min-width: 768px){
-      margin-left: 50px;
-    }
-    @media screen and(min-width: 1000px){
-      margin-left: 80px;
-      margin-right: 20px;
-    }
+    margin-left: 80px;
+    margin-right: 20px;
     .category{
       zoom: 1;
       .category-web{
