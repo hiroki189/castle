@@ -1,69 +1,57 @@
 .wrapper
-  =render 'topp'
+  =render 'castles/topp'
   
   .top-inner
     .top-inner_clip
       %ul.category
         %li.category-web
           .figure
-            %a{href: "/hiromae"}
-              %img{src: "/assets/520px-Hirosaki-castle_Aomori_JAPAN.jpg",width:"400",height:"300"}
-              %p 弘前城
+            = link_to image_tag("/assets/520px-Hirosaki-castle_Aomori_JAPAN.jpg",width:"400",height:"300"), "/castles/13"
+            %p 弘前城
         %li.category-web
           .figure
-            %a{href: "/maruoka"}
-              %img{src: "/assets/520px-Maruoka_Castle_20100529-01.jpg",width: "400",height: "300"}
-              %p 丸岡城
+            = link_to image_tag("/assets/520px-Maruoka_Castle_20100529-01.jpg",width: "400",height: "300"), "/castles/14"
+            %p 丸岡城
         %li.category-web
           .figure
-            %a{href: "/matue"}
-              %img{src: "/assets/600px-150321_Matsue_Castle_Matsue_Shimane_pref_Japan01bs.jpg",width: "400",height: "300"}
-              %p 松江城
+            = link_to image_tag("/assets/600px-150321_Matsue_Castle_Matsue_Shimane_pref_Japan01bs.jpg",width: "400",height: "300"), "/castles/15"
+            %p 松江城
         %li.category-web
           .figure
-            %a{href: "bichumatuyama"}
-              %img{src: "/assets/520px-Bitchu_Matsuyama_Castle_1.jpeg",width: "400",height: "300"}
-              %p 備中松山城
+            = link_to image_tag("/assets/520px-Bitchu_Matsuyama_Castle_1.jpeg",width: "400",height: "300"), "/castles/16"
+            %p 備中松山城
         %li.category-web
           .figure
-            %a{href:"marukame"}
-              %img{src: "/assets/2.jpeg",width: "400",height: "300"}
-              %p 丸亀城
+            = link_to image_tag("/assets/2.jpeg",width: "400",height: "300"), "/castles/17"
+            %p 丸亀城
         %li.category-web
           .figure
-            %a{href:"/uwajima"}
-              %img{src: "/assets/520px-Uwazimacastle_tensyu.jpeg",width: "400",height: "300"}
-              %p 宇和島城
+            = link_to image_tag("/assets/520px-Uwazimacastle_tensyu.jpeg",width: "400",height: "300"), "/castles/18"
+            %p 宇和島城
         %li.category-web
           .figure
-            %a{href: "/kouti"}
-              %img{src: "/assets/520px-Kochi_Castle09.jpeg",width: "400", height: "300"}
-              %p 高知城
+            = link_to image_tag("/assets/520px-Kochi_Castle09.jpeg",width: "400", height: "300"), "/castles/19"
+            %p 高知城
         %li.category-web
           .figure
-            %a{href: "/siroisi"}
-              %img{src: "/assets/520px-Shiroishi_Castle.jpeg",width: "400", height: "300"}
-              %p 白石城
+            = link_to image_tag("/assets/520px-Shiroishi_Castle.jpeg",width: "400", height: "300"), "/castles/20"
+            %p 白石城
         %li.category-web
           .figure
-            %a{href: "/sirakawakomine"}
-              %img{src: "/assets/500px-Shirakawa_Komine_Castle_20100625-01.jpg",width: "400",height: "300"}
-              %p 白河小峰城
+            = link_to image_tag("/assets/500px-Shirakawa_Komine_Castle_20100625-01.jpg",width: "400",height: "300"), "/castles/21"
+            %p 白河小峰城
         %li.category-web
           .figure
-            %a{href: "/kakegawa"}
-              %img{src: "/assets/520px-Kakegawajo.jpg",width: "400",height: "300"}
-              %p 掛川城
+            = link_to image_tag("/assets/520px-Kakegawajo.jpg",width: "400",height: "300"), "/castles/22"
+            %p 掛川城
         %li.category-web
           .figure
-            %a{href: "/matumae"}
-              %img{src: "/assets/520px-MatsumaeCastle.jpg",width: "400", height: "300"}
-              %p 松前城
+            = link_to image_tag("/assets/520px-MatsumaeCastle.jpg",width: "400", height: "300"), "/castles/23"
+            %p 松前城
         %li.category-web
           .figure
-            %a{href: "/aiduwakamatu"}
-              %img{src: "/assets/520px-March_2011_The_Aizu-Wakamatsu_Castle.jpg",width: "400",height: "300"}
-              %p 会津若松城
+            = link_to image_tag("/assets/520px-March_2011_The_Aizu-Wakamatsu_Castle.jpg",width: "400",height: "300"), "/castles/24"
+            %p 会津若松城
 
     .footer_clip
       =render 'under'

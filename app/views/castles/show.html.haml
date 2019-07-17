@@ -1,0 +1,53 @@
+.wrapper
+  =render 'castles/topp'
+
+  .name
+    .name__header
+      %h1.name__header_siromei
+        = @citadel.name
+    .name__header__adress
+      %i.fa.fa-map-marker.name__header__adress_mark
+      .name__header__adress_sales
+        = @citadel.address
+      %i.fa.fa-clock-o.name__header__adress_clock
+      .name__header__adress_time
+        = @citadel.time
+
+  .castle-photo
+    .castle-photo__box
+      = image_tag(@citadel.image)
+
+  .detail
+    .detail__point
+      .detail__point_title 見所
+      .detail__point_description
+        %span
+          = @citadel.text
+
+      -# .detail__point_detour.contory 寄り道
+    .detail__history
+      .detail__history_title 詳細
+      .detail__history_comment
+        %span
+          = @citadel.detail
+      -# .detail__history_money.fee 入場料
+    .detail__map
+      .detail__map_title お問い合わせ
+      .detail__map_paste
+        %iframe{allowfullscreen:  "", frameborder:  "0", :height => "450", src: @citadel.map, style: "border:0", width: "600"}
+      .detail__map_adress
+        %i.fa.fa-map-marker.detail__map_adress_mark
+        %span.detail__map_adress_code
+          = @citadel.address
+
+  -# .word
+  -#   .word__pillar
+  -#     .word__pillar__mouse
+  -#       .word__pillar__mouse_title
+  -#         .word__pillar__mouse_title_text
+  -#           口コミ
+  -#     .word__pillar__container
+  -#       .word__pillar__container__reviews
+  -#         .word__pillar__container__reviews_name
+  -#           %p.word__pillar__container__reviews_name_letter
+  -#         .word__pillar__container__reviews_quoto
