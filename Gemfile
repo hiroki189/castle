@@ -56,3 +56,4 @@ gem "font-awesome-rails"
 gem 'active_hash'
 gem 'pry-rails'
 gem 'wikipedia-client'
+gem 'devise'
