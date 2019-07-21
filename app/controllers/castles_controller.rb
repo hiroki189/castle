@@ -1,4 +1,7 @@
 class CastlesController < ApplicationController
+
+  before_action :move_to_index, except: :index
+
   def index
   end
 
@@ -7,4 +10,7 @@ class CastlesController < ApplicationController
     @citadel = Citadel.find(params[:id])
   end
 
+  def move_to_index
+    redirect_to action: :index 
+  end
 end
