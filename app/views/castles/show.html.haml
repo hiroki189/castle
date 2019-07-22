@@ -39,15 +39,28 @@
         %i.fa.fa-map-marker.detail__map_adress_mark
         %span.detail__map_adress_code
           = @citadel.address
-
-  -# .word
-  -#   .word__pillar
-  -#     .word__pillar__mouse
-  -#       .word__pillar__mouse_title
-  -#         .word__pillar__mouse_title_text
-  -#           口コミ
-  -#     .word__pillar__container
-  -#       .word__pillar__container__reviews
-  -#         .word__pillar__container__reviews_name
-  -#           %p.word__pillar__container__reviews_name_letter
-  -#         .word__pillar__container__reviews_quoto
+  .comment
+    .comment__form
+      %textarea.comment__form_text{cols:"30",name:"text",placeholder:"コメントする",rows:"2"}
+      %input.comment__form_send{type: "submit",value:"SENT"}
+  .word
+    .word__mouse
+      .word__mouse__pillar
+        .word__mouse__pillar_title
+          .word__mouse__pillar_title_text
+            コメント
+        %div.word__mouse__pillar__container
+          -# .word__mouse__pillar__container__page
+          -#   口コミ
+          -#   %b
+          -#     1 ~
+          -#   %b
+          -#     10
+          %div
+            .word__mouse__pillar__container__review
+              .word__mouse__pillar__container__review_name
+                hiro
+              .word__mouse__pillar__container__review_letter
+                %p.word__mouse__pillar__container__review_letter_sentence
+                  城郭が綺麗で美しかった
+              -# .word__mouse__pillar__container__review_time
