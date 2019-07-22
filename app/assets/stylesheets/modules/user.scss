@@ -1,0 +1,71 @@
+.contents.row{
+  background-image: url(https://cdn.fujiyama-navi.jp/entries/images/000/004/668/original/6688648b-443d-4f6b-a39f-be2240ea06e3.jpg?1516586033);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  h2{
+    font-size: 30px;
+    font-weight: 200;
+    padding-left: 100px;
+  }
+  ul{
+    display: contents;
+  }
+  .new_user{
+    height: 690px;
+    padding: 100px;
+    display:block;
+  }
+  label{
+    font-size: 20px;
+  }
+  #user_nickname{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: black;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+  }
+  #user_email{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: black;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+  }
+  #user_password{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: black;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+  }
+  #user_password_confirmation{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: black;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+  }
+  .actions{
+    text-align: center;
+  }
+  input[type="submit"]{
+    border-style: none;
+    height: 40px;
+    cursor: pointer;
+    width: 300px;
+    border-radius: 20px;
+    font-size: 18px;
+    border: 1px solid #fff;
+    background: rgba(0,0,0,0.2);
+  }
+}

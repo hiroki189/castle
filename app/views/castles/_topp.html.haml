@@ -1,7 +1,15 @@
 .top-pape
   %header.top-pape__site
     %h1.top-pape__site_title
-      %a{href: "/castles"}Castle
+      %a{href: "/"}Castle
+      .top-pape__site_title__user
+      - if user_signed_in?
+        .top-pape__site_title__user_out
+          = link_to "ログアウト", destroy_user_session_path, method: :delete
+      - else
+        .top-pape__site_title__user_new
+          = link_to "ログイン", new_user_session_path, class: 'post'
+          = link_to "登録", new_user_registration_path, class: 'post'
     %nav.side-warap
       %ul.side-warap__bar
         %li
