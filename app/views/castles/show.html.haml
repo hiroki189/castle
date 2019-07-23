@@ -45,22 +45,14 @@
         = form_tag("/citadels/#{@citadel.id}/comments",method: :post) do
           %textarea.comment__form_text{cols:"30",name:"text",placeholder:"コメントする",rows:"2"}
           %input.comment__form_send{type: "submit",value:"SENT"}
-    .word
-      .word__mouse
-        .word__mouse__pillar
-          .word__mouse__pillar_title
-            .word__mouse__pillar_title_text
-              コメント
-          %div.word__mouse__pillar__container
-            -# .word__mouse__pillar__container__page
-            -#   口コミ
-            -#   %b
-            -#     1 ~
-            -#   %b
-            -#     10
-            %div
-              .word__mouse__pillar__container__review
-                .word__mouse__pillar__container__review_name
-                .word__mouse__pillar__container__review_letter
-                  %p.word__mouse__pillar__container__review_letter_sentence
-                -# .word__mouse__pillar__container__review_time
+  .word
+    .word__pillar
+      %h4
+        コメント
+      .word__pillar__comment
+        - if @comments
+          - @comments.each do |comment|
+            .word__pillar__comment_name
+              = link_to comment.user.nickname, "/users/#{comment.user_id}"
+            .word__pillar__comment_text
+              = comment.text

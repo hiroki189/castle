@@ -64,77 +64,42 @@
       width: 200px;
       height: 40px;
       background: #75a8ff;
-    }
-  }
-}
-.word{
-  height: 1000px;
-  padding: 25px;
-  @media screen and (min-width: 768px){
-    padding: 25px 80px;
-    margin: 0 auto;
-  }
-  &__mouse{
-    background: #fff;
-    display: block;
-    &__pillar{
-      padding: 20px 25px 24px 25px;
-      &_title{
-        display: flex;
-        &_text{
-          font-size: 25px;
-          font-weight: 200;
-          width: 100%;
-        }
-        &_comment-btn{
-          float: right;
-          width: 200px;
-          background: #75a9ff;
-          color: #fff;
-          line-height: 40px;
-          text-align: center;
-          font-size: 18px;
-          border-radius: 4px;
-          cursor: pointer;
-        }
-      }
-      &__container{
-        display:block;
-        padding: 10px 0 0 0;
-        border-bottom: solid 1px #e5e5e5;
-        height: 80px;
-        &__page{
-          font-size: 12px;
-          padding: 16px 0 10px;
-        }
-         &__review{
-           padding: 10px 18px;
-           &_name{
-             float: left;
-             font-size: 18px;
-             width: 25%;
-             line-height: 30px;
-           }
-           &_letter{
-             float: left;
-             width: 75%;
-             &_title{
-              text-align: left;
-             }
-              &_sentence{
-                font-size: 16px;
-                color: #3a3a3a;
-                word-wrap: break-word;
-              }
-           }
-         }
-      }
+      outline: none;
+      cursor: pointer;
     }
   }
 }
 
-ul{
-  margin: 0;
-  height: 0;
-  list-style-position: inside;
-}
+  .word{
+    display: block;
+    padding: 25px 80px;
+    &__pillar{
+      background: #fff;
+      h4{
+        font-size: 30px;
+        text-align: center;
+        padding: 20px;
+
+      }
+      &__comment{
+        color: #FFF;
+        &_name{
+          padding: 0 30px 0 30px;
+          font-size: 20px;
+          float: left;
+          a{
+            text-decoration: none;
+          }
+        }
+        &_text{
+          font-size: 20px;
+          border-bottom: solid 1px #eeee;
+          margin-bottom: 10px;
+          color: black;
+        }
+      }
+    }
+
+  }
+
+
