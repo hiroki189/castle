@@ -39,15 +39,20 @@
         %i.fa.fa-map-marker.detail__map_adress_mark
         %span.detail__map_adress_code
           = @citadel.address
-
-  -# .word
-  -#   .word__pillar
-  -#     .word__pillar__mouse
-  -#       .word__pillar__mouse_title
-  -#         .word__pillar__mouse_title_text
-  -#           口コミ
-  -#     .word__pillar__container
-  -#       .word__pillar__container__reviews
-  -#         .word__pillar__container__reviews_name
-  -#           %p.word__pillar__container__reviews_name_letter
-  -#         .word__pillar__container__reviews_quoto
+  .comment
+    .comment__form
+      - if current_user
+        = form_tag("/citadels/#{@citadel.id}/comments",method: :post) do
+          %textarea.comment__form_text{cols:"30",name:"text",placeholder:"コメントする",rows:"2"}
+          %input.comment__form_send{type: "submit",value:"SENT"}
+  .word
+    .word__pillar
+      %h4
+        コメント
+      .word__pillar__comment
+        - if @comments
+          - @comments.each do |comment|
+            .word__pillar__comment_name
+              = link_to comment.user.nickname, "/users/#{comment.user_id}"
+            .word__pillar__comment_text
+              = comment.text

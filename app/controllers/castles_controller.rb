@@ -1,6 +1,6 @@
 class CastlesController < ApplicationController
 
-  before_action :move_to_index, except: :index
+  before_action :move_to_index, except: [:index]
 
   def index
   end
@@ -8,9 +8,21 @@ class CastlesController < ApplicationController
   def show
     # binding.pry
     @citadel = Citadel.find(params[:id])
+    @comments = @citadel.comments.includes(:user)
+  end
+
+  def new
+  end
+
+  def create
+    Citadel.create(name: citadel_params[:name], image: citadel_params[:image],text: citadel_params[:text], user_id: current_user.id)
+  end
+
+  private
+  def citadel_params
+    params.permit(:name, :image, :text)
   end
 
   def move_to_index
-    redirect_to action: :index unless user_signed_in?
   end
 end
