@@ -14,6 +14,7 @@ class CastlesController < ApplicationController
   def new
   end
 
+  
   def create
     Citadel.create(name: citadel_params[:name], image: citadel_params[:image],text: citadel_params[:text], user_id: current_user.id)
   end
