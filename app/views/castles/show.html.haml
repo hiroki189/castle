@@ -39,22 +39,6 @@
         %i.fa.fa-map-marker.detail__map_adress_mark
         %span.detail__map_adress_code
           = @citadel.address
-  .comment
-    .comment__form
-      - if current_user
-        = form_tag("/citadels/#{@citadel.id}/comments",method: :post) do
-          %textarea.comment__form_text{cols:"30",name:"text",placeholder:"コメントする",rows:"2"}
-          %input.comment__form_send{type: "submit",value:"SENT"}
-  .word
-    .word__pillar
-      %h4
-        コメント
-      .word__pillar__comment
-        - if @comments
-          - @comments.each do |comment|
-            .word__pillar__comment_name
-              = link_to comment.user.nickname, "/users/#{comment.user_id}"
-            .word__pillar__comment_text
-              = comment.text
-        .word__pillar__comment_name
-        .word__pillar__comment_text
+
+  %div.location
+    %div.location__section

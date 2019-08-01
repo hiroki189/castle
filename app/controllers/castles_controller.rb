@@ -8,7 +8,6 @@ class CastlesController < ApplicationController
   def show
     # binding.pry
     @citadel = Citadel.find(params[:id])
-    @comments = @citadel.comments.includes(:user)
   end
 
   def new

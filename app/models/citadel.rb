@@ -1,4 +1,3 @@
 class Citadel < ApplicationRecord
-  belongs_to  :user
-  has_many    :comments
+  belongs_to  :user, optional: true
 end
