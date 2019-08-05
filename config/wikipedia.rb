@@ -5,6 +5,6 @@ Wikipedia.Configure{
   path   'w/api.php'
 }
 
-page = Wikipedia.find(ARGV[0])
+page = Wikipedia.find('')
 
 puts page.summary

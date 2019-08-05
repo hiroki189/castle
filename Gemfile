@@ -59,4 +59,5 @@ gem 'wikipedia-client'
 gem 'devise'
 gem 'haml-rails'
 gem 'rspec-rails'
+gem 'kaminari'
 

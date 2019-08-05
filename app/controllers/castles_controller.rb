@@ -3,6 +3,7 @@ class CastlesController < ApplicationController
   before_action :move_to_index, except: [:index]
 
   def index
+    @citadel = Citadel.order("created_at DESC").page(params[:page]).per(12)
   end
 
   def show
