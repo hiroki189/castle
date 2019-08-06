@@ -1,2 +1,18 @@
-%h1 Posts#index
-%p Find me in app/views/posts/index.html.haml
+%h1 コメントサンプル
+- if user_signed_in?
+  = link_to "ログアウト", destroy_user_session_path, :method => :delete
+  = link_to "マイページへ", user_path(current_user.id)
+  %h2 投稿する
+  = form_for @post do |f|
+    = f.text_field :content
+    = f.submit
+  %hr/
+  %h2 投稿一覧
+  - @posts.each do |post|
+    %a{:href => "/users/#{post.user.id}"}= post.user.email
+    %p
+      %a{:href => "/posts/#{post.id}"}= post.content
+- else
+  = link_to "ユーザー登録", new_user_registration_path
+  = link_to "ログイン", new_user_session_path
+
