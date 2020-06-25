@@ -1,4 +1,4 @@
-Citadel.create(
+Citadel.create!(
   [
     {
     name: '大阪城',
